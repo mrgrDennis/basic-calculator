@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" readonly>
+      <button class="operand" id="clear" onclick="clearDisplay()">C</button>
+      <button class="number" onclick="addToExpression('7')">7</button>
+      <button class="number" onclick="addToExpression('8')">8</button>
+      <button class="number" onclick="addToExpression('9')">9</button>
+      <button class="operand" onclick="addToExpression('/')">/</button>
+      <button class="number" onclick="addToExpression('4')">4</button>
+      <button class="number" onclick="addToExpression('5')">5</button>
+      <button class="number" onclick="addToExpression('6')">6</button>
+      <button class="operand" onclick="addToExpression('*')">*</button>
+      <button class="number" onclick="addToExpression('1')">1</button>
+      <button class="number" onclick="addToExpression('2')">2</button>
+      <button class="number" onclick="addToExpression('3')">3</button>
+      <button class="operand" onclick="addToExpression('+')">+</button>
+      <button class="number" onclick="addToExpression('0')">0</button>
+      <button class="operand" onclick="addToExpression('.')">.</button>
+      <button class="operand" onclick="addToExpression('-')">-</button>
+      <button id="equals" onclick="calculate()">=</button>
+    </div>
+  
+    <script src="calculator.js"></script>
+  </body>
+</html>
